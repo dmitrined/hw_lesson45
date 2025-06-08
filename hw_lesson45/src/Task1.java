@@ -43,8 +43,8 @@ public class Task1 {
         return result;
     }
 
-    public static File createFolder(File targetFolder, String subFolderName) {
-        File newFolder = new File(targetFolder, subFolderName);
+    public static File createFolder(File targetFolder, String FolderName) {
+        File newFolder = new File(targetFolder, FolderName);
         boolean created = newFolder.mkdir();
         if (!created) {
             throw new CreateFolderException("Не получилось создать папку " + newFolder);
